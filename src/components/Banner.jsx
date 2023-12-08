@@ -64,7 +64,7 @@ const Banner = ({image,title,subtitle,text,input}) => {
                     
                  </FilledInput> : null}
                
-                {input ? <Button sx={{bgcolor:'red',ml:1, bgcolor:'brown',
+                {input ? <Button sx={{ml:1, bgcolor:'#4F200D',
                   borderRadius:'20px',height:'2.8rem', mb:0.5
                   }}>
                     <Typography sx={{pl:2, pr:2}}>
