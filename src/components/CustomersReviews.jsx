@@ -1,7 +1,7 @@
 import { Avatar, Box, Card, CardMedia, Typography } from '@mui/material'
 import React from 'react'
 import Title from './Title'
-import CarrouselXl from './carrouselCustomers/CarrouselXl'
+import CarrouselXl from './carrouselCustomers/CarrouselXL'
 import CarrouselSm from './carrouselCustomers/CarrouselSm'
 
 import MediaQuery from 'react-responsive';
