@@ -32,7 +32,7 @@ const CarrouselSmall = () => {
                 
            
                               
-                            <Card component='div' sx={{ height: 360,minWidth:200,maxWidth:250,bgcolor:'#E2D9C8', border:'solid .5rem #F1F0EE' }}>
+                            <Card  key={cook.name}  component='div' sx={{ height: 360,minWidth:200,maxWidth:250,bgcolor:'#E2D9C8', border:'solid .5rem #F1F0EE' }}>
 
 
                                 <CardMedia sx={{ height: 220}}

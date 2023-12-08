@@ -27,7 +27,7 @@ const CarrouselSm = () => {
               {CUSTOMERS.map((customer,i)=>{
                 return(
 
-                  <Card component='div' sx={{ height: 200,mb:2,
+                  <Card key={i}   component='div' sx={{ height: 200,mb:2,
                   width: 50, p:1, 
                   flexWrap:'wrap',
                   boxShadow:'5px 5px 10px '

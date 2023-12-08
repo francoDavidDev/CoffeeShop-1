@@ -45,7 +45,7 @@ function Footer() {
         }}>
             {SOCIAL_MEDIA.map((text,i)=>{
                 return(
-                <Box >
+                <Box   key={i} >
                     <Typography 
                     color='#F1F0EE'
                     variant='h6'
@@ -73,7 +73,7 @@ function Footer() {
             })}
         </Box>
 
-        <Box width='17%' sx={{
+        <Box   width='17%' sx={{
                            display:'flex',
                            justifyContent:'start',
                            alignItems:'center',
@@ -82,7 +82,7 @@ function Footer() {
                         
                     }}>
                         {ICONS_MEDIA.map((text,i)=>{
-                            return(<>
+                            return( <Box component='div' key={i}>
                                 <Typography key={i}   color='#F1F0EE'variant='h6' fontSize='0.8rem'
                              
                                  sx={{display:'flex',
@@ -92,7 +92,7 @@ function Footer() {
                                 {text.title}
                                 </Typography>
                            
-                                <Box  mr={1} sx={{mt:2,
+                                <Box   sx={{mt:2,
                                  display:'flex',
                                   alignItems:'center',
                                    justifyContent:'center',
@@ -100,12 +100,12 @@ function Footer() {
                                 {text.links.map((icon,i)=>{
                                     return(
                                         
-                                       <img src={icon.name} alt=""  width='20px'/>
+                                       <img  key={i} src={icon.name} alt=""  width='20px'/>
                                        
                                     )
                                 })}
                                 </Box>
-                                </>
+                                </Box>
                             )
                         })}
                     </Box>

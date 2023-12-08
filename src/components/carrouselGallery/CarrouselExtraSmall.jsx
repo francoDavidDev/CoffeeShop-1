@@ -28,12 +28,12 @@ const settings = {
 const CarrouselExtraSmall = () => {
     return (
         <Slider {...settings}   >
-                    {COFFEES.map((coffe)=>{
+                    {COFFEES.map((coffe,i)=>{
                     return(
                     
                
                                   
-                                <Card component='div' sx={{ height: 360,minWidth:200, maxWidth:250, bgcolor:'#E2D9C8', border:'solid .5rem #F1F0EE'}}>
+                                <Card key={i} component='div' sx={{ height: 360,minWidth:200, maxWidth:250, bgcolor:'#E2D9C8', border:'solid .5rem #F1F0EE'}}>
     
     
                                     <CardMedia sx={{ height: 220}}

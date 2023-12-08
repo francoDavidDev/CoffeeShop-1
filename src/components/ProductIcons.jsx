@@ -28,7 +28,7 @@ const ProductIcons = () => {
         {ICONS.map((icon)=>{
             return(
                 
-                    <img src={icon.name} alt=""  loading="lazy" width='70px'/>
+                    <img  key={icon.name} src={icon.name} alt=""  loading="lazy" width='70px'/>
                 
             )
         })}

@@ -35,7 +35,7 @@ const Banner = ({image,title,subtitle,text,input}) => {
                { text ? 
                <Button variant='contained'
                  color='primary'
-                 fullWidth='100%'
+               
                  sx={{borderRadius:10,height:30,marginTop:2, bgcolor:'#4F200D'}}
               
                  >
