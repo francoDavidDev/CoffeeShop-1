@@ -32,9 +32,9 @@ const CustomersReviews = () => {
             sx={{
             paddingTop:'20px', margin:'auto'}}>
 
-            <MediaQuery minWidth={0} maxWidth={720} >
-            <CarrouselSm/>
-            </MediaQuery>
+                  <MediaQuery minWidth={0} maxWidth={720} >
+                  <CarrouselSm/>
+                  </MediaQuery>
 
                 <MediaQuery minWidth={721} >
                     <CarrouselXl/>

@@ -74,7 +74,7 @@ const BannerFooter = ({}) => {
                     
                  </FilledInput> 
                
-              <Button sx={{bgcolor:'red',ml:1, bgcolor:'#4F200D',
+              <Button sx={{ml:1, bgcolor:'#4F200D',
                   borderRadius:'20px',height:'3rem', 
                   width:{md:'7rem',sm:'7em', xs:'5rem'},
               
