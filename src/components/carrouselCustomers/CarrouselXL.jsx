@@ -1,11 +1,11 @@
 import React from 'react'
-import { Avatar, Box, Card, CardMedia, Typography } from '@mui/material'
+import { Avatar, Box, Card, CardMedia,CardContent, Typography } from '@mui/material'
 
 
 
 import { CUSTOMERS } from '../../constants'
 import Slider from 'react-slick'
-import { CardContent } from '@mui/joy'
+
 
 const CarrouselXl = () => {
     
