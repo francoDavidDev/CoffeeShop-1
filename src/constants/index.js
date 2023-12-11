@@ -19,25 +19,25 @@ import TwitterIcon from '../assets/img/icons/twitter.png'
 export const CUSTOMERS=[
     {
         name:'Frango Gomez',
-        tag:'cliente',
+        tag:'customer',
         descripcion:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         photo:agustin
     },
     {
         name:'Agustin Reynoso',
-        tag:'cliente',
+        tag:'customer',
         descripcion:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         photo:agustin
     }, 
     {
         name:'Rodrigo Piriz',
-        tag:'cliente',
+        tag:'customer',
         descripcion:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         photo: rodrigo
     },
      {
         name:'Rodrigo Piriz',
-        tag:'cliente',
+        tag:'customer',
         descripcion:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         photo: rodrigo
     }

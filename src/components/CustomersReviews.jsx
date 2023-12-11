@@ -34,9 +34,9 @@ const CustomersReviews = () => {
             sx={{
             paddingTop:'20px', margin:'auto'}}>
 
-                  <MediaQuery minWidth={0} maxWidth={720} >
+              
                   <CarrouselCustomers/>
-                  </MediaQuery>
+              
 
             
 

@@ -51,7 +51,8 @@ const CarrouselCustomers = () => {
   settings.slidesToShow = 2
 
  }else{
-  settings.slidesToShow = 3
+  settings.slidesToShow = 3,
+  settings.centerMode=false
  }
 
 
