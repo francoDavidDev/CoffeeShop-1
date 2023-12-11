@@ -31,19 +31,14 @@ const BannerFooter = ({}) => {
                         flexDirection:'column'}}>
 
                 
-                              <Typography  variant='h4' color='white'>
+                              <Typography  variant='h4' color='white' textAlign={'center'}>
                                   'Join in and get 15% off!'
+                                </Typography>
                                   
-                                  </Typography>
-                                  
-                                  <Typography component='span'variant='h4'  fontWeight='bold'fontSize={20} textAlign='center'
-                         
-                                >
-
+                                  <Typography component='span'variant='h4'  fontWeight='bold'fontSize={20} textAlign='center'>
                                     susbribe to our newsletter and get 15% 
-                                    off discount code.
-                                    
-                              </Typography>
+                                    off discount code.   
+                             </Typography>
                   </Box>   
                     
                       <Box sx={{
@@ -51,11 +46,15 @@ const BannerFooter = ({}) => {
                     alignItems:'center',
                     justifyContent:'center',
                     width:'100%',
-                    mt:2
+                    flexWrap:'wrap',
+                    mt:2,
+                    gap:1
+                   
+                   
                     }}>
 
                  
-        
+           
                 <FilledInput 
                  hiddenLabel:true
                  placeholder='Email andress'
@@ -74,9 +73,9 @@ const BannerFooter = ({}) => {
                     
                  </FilledInput> 
                
-              <Button sx={{ml:1, bgcolor:'#4F200D',
+              <Button sx={{ bgcolor:'#4F200D',
                   borderRadius:'20px',height:'3rem', 
-                  width:{md:'7rem',sm:'7em', xs:'5rem'},
+                  width:{md:'7rem',sm:'6em', xs:'5rem'},
               
                   }}>
                     <Typography sx={{pl:2, pr:2,
@@ -84,8 +83,8 @@ const BannerFooter = ({}) => {
                         Suscribe
                     </Typography>
                     </Button>
-                      
-                    </Box>
+                         
+              </Box>
         </Box>
     </Box>
   )

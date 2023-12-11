@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Button, Typography } from '@mui/material'
 import MenuGallery from './MenuGallery'
-import GalleryCook from './GalleryCook'
+import GalleryCakes from './GalleryCakes'
 import Title from './Title'
 
 const MenuProducts = () => {
@@ -11,7 +11,7 @@ const MenuProducts = () => {
       <MenuGallery/>
       <Title  title={'Cake Shop'} color={'#F1F0EE'} />
 
-      <GalleryCook/>
+      <GalleryCakes/>
 
     </Box>
   )

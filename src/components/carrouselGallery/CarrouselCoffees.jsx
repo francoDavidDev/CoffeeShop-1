@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 
 import { Settings } from '@mui/icons-material';
 
 import Carousel from 'react-material-ui-carousel';
 import Slider from 'react-slick';
 import { COFFEES } from '../../constants';
+
+//import MediaQuery from 'react-responsive';
+
 
 import { Card, Button, Typography,CardActions, CardMedia, CardContent } from '@mui/material';
 
@@ -23,14 +26,52 @@ const settings = {
     centerPadding:'20x'
   };
 
-const CarrouselLarge = () => {
+const CarrouselCoffees = () => {
+
+  
+  
+  const [w,setW] = useState(window.innerWidth)
+
+  useEffect(()=>{
+    const handleResize =()=>{
+      setW(window.innerWidth)
+    }
+
+    window.addEventListener('resize', handleResize);
+    return()=>{
+      window.removeEventListener('resize', handleResize);
+    }
+
+   
+  },[])
+
+
+ 
+
+  if( w <= 500 ){
+    settings.slidesToShow = 1,
+    settings.arrows=false
+   }else if( w <= 700){
+    settings.slidesToShow = 1.5,
+  settings.slidesToShow = 1.5
+ }else if( w <= 950){
+  settings.slidesToShow = 2
+
+ }else{
+  settings.slidesToShow = 3
+ }
+
+
+
+
   return (
+    <>
     <Slider {...settings}   >
                 {COFFEES.map((coffe)=>{
                 return(
                 
            
-                              
+                             
                             <Card  key={coffe.name} component='div' sx={{ height: 360,minWidth:185 , bgcolor:'#E2D9C8', border:'solid .5rem #F1F0EE'}}>
 
 
@@ -81,8 +122,8 @@ const CarrouselLarge = () => {
                 )
             })}
          
-         </Slider>
+         </Slider></>
   )
 }
 
-export default CarrouselLarge
+export default CarrouselCoffees

@@ -1,8 +1,7 @@
 import { Avatar, Box, Card, CardMedia, Typography } from '@mui/material'
 import React from 'react'
 import Title from './Title'
-//import CarrouselXl from './carrouselCustomers/CarrouselXL'
-import CarrouselSm from './carrouselCustomers/CarrouselSm'
+import CarrouselCustomers from './carrouselCustomers/CarrouselCustomers'
 
 import MediaQuery from 'react-responsive';
 
@@ -10,6 +9,9 @@ import MediaQuery from 'react-responsive';
 
 
 const CustomersReviews = () => {
+
+  
+
 
 
   return (
@@ -33,12 +35,10 @@ const CustomersReviews = () => {
             paddingTop:'20px', margin:'auto'}}>
 
                   <MediaQuery minWidth={0} maxWidth={720} >
-                  <CarrouselSm/>
+                  <CarrouselCustomers/>
                   </MediaQuery>
 
-                <MediaQuery minWidth={721} >
-                   {/* <CarrouselXl/> */}
-                </MediaQuery>
+            
 
             </Box>
           

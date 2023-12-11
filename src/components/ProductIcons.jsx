@@ -18,18 +18,18 @@ const ProductIcons = () => {
 
       sx={{
     display:'flex',
-    justifyContent:'center',
+    justifyContent:'space-evenly',
     alignItems:'center',
-    gap:{xs:'2rem',sm:'5rem'},
+
     height:{xs:'150px'}
     }}
       >
       
         {ICONS.map((icon)=>{
             return(
-                
-                    <img  key={icon.name} src={icon.name} alt=""  loading="lazy" width='70px'/>
-                
+                    <Box>
+                    <img  key={icon.name} src={icon.name} alt=""  loading="lazy" width='50rem'/>
+                    </Box>
             )
         })}
       

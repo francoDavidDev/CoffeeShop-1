@@ -82,7 +82,7 @@ export const ICONS_MEDIA =[
                 { name:TwitterIcon},
                 { name:FacebookIcon},
                 { name:InstagramIcon},
-                { name:LinkedInIcon},
+                
             ]
   
        }

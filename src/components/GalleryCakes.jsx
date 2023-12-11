@@ -1,9 +1,5 @@
 import { Box } from '@mui/material';
 
-
-
-
-
 import React from 'react';
  //reaact slider module
 
@@ -12,14 +8,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 
+import CardFLex from './muiComponents/CardFLex';
 
-import CarrouselCoffees from './carrouselGallery/CarrouselCoffees';
-
-
-
+import CarrouselCakes from './carrouselCake/CarrouselCakes';
 
 
-const MenuGallery = () => {
+
+
+const GalleryCakes = () => {
 
 
 
@@ -27,15 +23,15 @@ const MenuGallery = () => {
   return (
     
         <Box  width='90%' sx={{mt:4}} height='400px' >
-            <CarrouselCoffees/>
+ 
+            <CarrouselCakes/>
          </Box>
 
   )
 }
 
-export default MenuGallery
+export default GalleryCakes
 
 
 
 
-  

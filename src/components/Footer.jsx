@@ -6,57 +6,52 @@ import { ICONS_MEDIA, SOCIAL_MEDIA } from '../constants'
 
 function Footer() {
   return (
-    <Box 
 
-    sx={{bgcolor:'#30261c',
-        display:'flex',
-        height:{xs:'250px', sm:'200px'},
-        flexDirection:{xs:'column', sm:'row'},
-        justifyContent:{xs:'center' ,sm:''},
-        alignItems:{xs:'center' ,sm:'start'},
-        paddingTop:{xs:0,sm:7}
-        
-        }}
-    >
-       
-        <Box
-        width='14%'
-          sx={{
-            display:'flex',
-            justifyContent:'center',
-            alignItems:'sce'
-        }}
-        >
-
-         <Typography  variant='h6' fontSize='1.2rem' ml={1} color='#F1F0EE'>
-            COFFEE
-        </Typography>   
-
-        </Box>
+    
 
         <Box
         width={1}
+        height={1}
+        pt='22px'
+        pb='22px'
         sx={{
+            bgcolor:'#30261c',
             display:'flex',
-            justifyContent:'center',
-            alignItems:'start',
+            justifyContent:'space-between',
+            alignItems:{sx:'center' ,sm:'start'},
             flexWrap:'nowrap',
-            gap:{xs:6,sm:5,md:12}
+            gap:2,
+            flexDirection:{xs:'column',sm:'row'}
+            
+           
         }}>
+               
+                        <Box
+                       
+                        sx={{
+                            display:'flex',
+                            justifyContent:'center',
+                            alignItems:'center'
+                        }}
+                        >
+
+                        <Typography  variant='h6' fontSize='1.2rem' ml={1} color='#F1F0EE'>
+                            COFFEE
+                        </Typography>   
+
+                        </Box>
+                        <Box   width={1}  sx={{display:'flex', justifyContent:'space-evenly', }}>
             {SOCIAL_MEDIA.map((text,i)=>{
                 return(
-                <Box   key={i} >
+                    <>
                     <Typography 
                     color='#F1F0EE'
                     variant='h6'
                      fontSize='0.8rem'
                      key={i}  
-                     sx={{display:'flex', flexDirection:'column'}}>
+                     sx={{display:'flex', flexDirection:'column',justifyContent:'space-around'}}>
                             {text.title}
-                            
-                    </Typography>
-
-                    <Typography variant='a' component='a' href='/' sx={{textDecoration:'none'}}
+                            <Typography variant='a' component='a' href='/' sx={{textDecoration:'none'}}
                     color='#999999'
                     fontSize='0.6rem'>
                         {text.link1}
@@ -66,19 +61,22 @@ function Footer() {
                         
                         {text.link3}
                     </Typography>
+                            
+                    </Typography>
+
+                
                     
-                 
-                    </Box>
+               </>
+                   
                 )
             })}
-        </Box>
-
-        <Box   width='17%' sx={{
+             </Box>
+              <Box  sx={{
                            display:'flex',
                            justifyContent:'start',
                            alignItems:'center',
                            flexDirection:'column',
-                           width:{sx:1,sm:'17%'},
+                           width:{sx:1,sm:'30%'},
                         
                     }}>
                         {ICONS_MEDIA.map((text,i)=>{
@@ -109,9 +107,12 @@ function Footer() {
                             )
                         })}
                     </Box>
+        </Box>
+
+      
                    
 
-    </Box>
+ 
   )
 }
 
