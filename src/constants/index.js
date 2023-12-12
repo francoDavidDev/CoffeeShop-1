@@ -100,31 +100,31 @@ export const COFFEES=[
     {
         image:americano,
         name: 'Caffe',
-        description:' cafe con cafeina',
+        description: 'Coffee with caffeine',
         price:'$460'
     },
     {
         image:capuchino,
         title: 'Caffe',
-        description:'cafe con cafeina',
+        description:'Coffee with caffeine',
         price:'$460'
     },
     {
         image:expreso,
         title: 'Caffe',
-        description:'cafe con cafeina',
+        description:'Coffee with caffeine',
         price:'$460'
     },
     {
         image:latte,
         title: 'Caffe',
-        description:'cafe con cafeina',
+        description:'Coffee with caffeine',
         price:'$460'
     },
     {
         image:lungo,
         title: 'Caffe',
-        description:'cafe con cafeina',
+        description:'Coffee with caffeine',
         price:'$460'
     },
 ]
@@ -148,28 +148,28 @@ import  tartaChocolate from '../assets/img/products/cook/tartaChocolate.jpg';
 
 export const COOKS=[
     {
-        name: 'Alfajor',
-        description:'Alfajor de  maicena',
+        name: 'Caramel cookie',
+        description:'Caramel cookie',
         image:alfajores,
         price:'$400'
     },
     {
         name: 'Croissant',
-        description:'Croissant Casero',
+        description:'Homemade Croissant',
         image:croissant,
         price:'$400'
 
     },
     {
-        name: 'donuts',
-        description:'Donans de diferentes gustos',
+        name: 'Donuts',
+        description:'Donans of different tastes',
         image:donuts,
         price:'$400'
 
     },
     {
-        name: 'Tarta de frutilla',
-        description:'Tarta de frutilla',
+        name: 'Strawberry cake',
+        description:'Strawberry cake',
         image:tarta,
         price:'$400'
 
